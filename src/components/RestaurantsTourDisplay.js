@@ -48,7 +48,6 @@ const useStyles = makeStyles(theme => ({
         margin: 8
     },
     paper: {
-        height: 'calc(100vh - 64px)',
         padding: 25,
         overflowX: 'hidden',
         overflowY: 'auto'
@@ -230,7 +229,7 @@ const RestaurantsTourDisplay = ({
                             className={classes.paper}
                             xs={9}
                             style={{
-                                height: `calc(${windowSize.height} - 64px)`
+                                height: windowSize.height - 64
                             }}
                             id="printPdf">
                             {weatherDayForecast && (

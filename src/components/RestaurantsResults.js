@@ -113,6 +113,13 @@ const useStyles = makeStyles(theme => ({
     },
     pageSubtitle: {
         marginBottom: 6
+    },
+    ratingStar: {
+        color: '#ca7919',
+        fontSize: '1rem'
+    },
+    ratingText: {
+        color: '#ca7919'
     }
 }));
 
