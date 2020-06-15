@@ -1,0 +1,20 @@
+# serverless.yml
+
+service: food-tour-generator-api
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  app:
+    handler: api/index.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+    # environment:
+    #     MAPBOX_API_KEY: KEY_HERE
+    #     OWM_API_KEY: KEY_HERE
+    #     YELP_API_KEY: KEY_HERE
